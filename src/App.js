@@ -1,12 +1,9 @@
-import { useEffect } from 'react';
 import './App.css';
-import { tg } from './tg';
+
+const tg = window.Telegram.WebApp
 
 
 function App() {
-  useEffect(() => {
-    console.log(tg)    
-  }, [])
   const handleClose = () => {
     tg.close()
   }
