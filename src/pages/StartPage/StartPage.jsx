@@ -5,9 +5,16 @@ import { QRCode } from './QRCode/QRCode'
 import { useInitData } from '@vkruglikov/react-telegram-web-app';
 
 import styles from './startPage.module.scss'
+import { useEffect } from 'react';
+
+const tg = window.Telegram.WebApp
 
 
 const StartPage = () => {
+    useEffect(() => {
+        alert(tg.useInitData)
+    }, [])
+
     return(
         <div className={styles.start}>
             <Logo/>
