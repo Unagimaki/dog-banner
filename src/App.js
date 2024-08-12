@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { PagesLinks } from './shared/PagesLinks';
 import BoostsPage from './pages/BoostsPage/BoostsPage';
@@ -12,6 +11,8 @@ import MainPage from './pages/MainPage/MainPage';
 import LoaderPage from './pages/LoaderPage/LoaderPage';
 import StartPage from './pages/StartPage/StartPage';
 
+import styles from './App.module.scss'
+
 const tg = window.Telegram.WebApp
 
 function App() {
@@ -19,8 +20,6 @@ function App() {
     tg.close()
   }
   useEffect(() => {
-    alert(tg.initData)
-
     
   }, [])
     return (
