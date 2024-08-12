@@ -19,7 +19,8 @@ const ShopPage = () => {
             <MainButton
                 text="Back"
                 onClick={() => navigate(-1)}
-            /><FooterMenu/>
+            />
+            <FooterMenu/>
         </div>
     )
 }

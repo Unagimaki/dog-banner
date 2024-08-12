@@ -5,8 +5,10 @@ import styles from './boostsPage.module.scss'
 import { ImproveContainer } from './ImproveContainer/ImproveContainer'
 import Balance from '../../features/Balance/Balance'
 import FooterMenu from '../../features/FooterMenu/FooterMenu'
+import { useNavigate } from 'react-router-dom'
 
 const BoostsPage = () => {
+    const navigate = useNavigate()
     const [boostModalIsVisible, setBoostModalIsVisible] = useState(false)
     const [visible, setVisible] = useState(false);
     const handleModal = () => {
@@ -26,6 +28,10 @@ const BoostsPage = () => {
             <ImproveContainer/>
             <BoostModal handleModal={handleModal} boostModalIsVisible={boostModalIsVisible}/>
             <FooterMenu/>
+            <MainButton
+                text="Back"
+                onClick={() => navigate(-1)}
+            />
         </div>
     )
 }
