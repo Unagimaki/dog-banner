@@ -12,7 +12,7 @@ const tg = window.Telegram.WebApp
 
 const StartPage = () => {
     useEffect(() => {
-        alert(tg.useInitData)
+        alert(tg.initData)
     }, [])
 
     return(
