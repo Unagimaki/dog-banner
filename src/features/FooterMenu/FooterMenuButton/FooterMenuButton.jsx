@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './moduleFooterButton.module.scss'
 
-const ModuleFooterButton = ({text, to, img, current_url}) => {
+const FooterMenuButton = ({text, to, img, current_url}) => {
     return(
         <Link to={`${to}`} className={styles.button}>
             
@@ -15,4 +15,4 @@ const ModuleFooterButton = ({text, to, img, current_url}) => {
     )
 }
 
-export default ModuleFooterButton
+export default FooterMenuButton

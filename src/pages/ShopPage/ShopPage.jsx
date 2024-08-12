@@ -4,6 +4,7 @@ import { MainButton } from '@vkruglikov/react-telegram-web-app';
 import { useNavigate } from 'react-router-dom';
 
 import styles from './shopPage.module.scss'
+import Balance from '../../features/Balance/Balance';
 
 
 const ShopPage = () => {
@@ -11,6 +12,7 @@ const ShopPage = () => {
 
     return(
         <div className={styles.shop_page}>
+            <Balance/>
             <FriendsCountContainer/>
             <SkinList/>
             <MainButton

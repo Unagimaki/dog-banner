@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import styles from './moduleStatsItem.module.scss'
+import styles from './statItem.module.scss'
 
-const ModuleStatsItem = ({img, text}) => {
+const StatItem = ({img, text}) => {
     return(
         <Link className={styles.item} to={'/boosts'}>
             <img className={styles.item_img} src={img} alt="icon" />
@@ -12,4 +12,4 @@ const ModuleStatsItem = ({img, text}) => {
     )
 }
 
-export default ModuleStatsItem
+export default StatItem

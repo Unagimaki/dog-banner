@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom"
 import { PagesLinks } from "../../shared/PagesLinks"
-import styles from './moduleFooterMenu.module.scss'
-import ModuleFooterButton from "./FooterModuleButton/ModuleFooterButton"
+import FooterMenuButton from "./FooterMenuButton/FooterMenuButton"
+import styles from './footerMenu.module.scss'
 
-const ModuleFooterMenu = () => {
+const FooterMenu = () => {
     const currentUrl = useLocation().pathname
 
     const buttons = [
@@ -38,7 +38,7 @@ const ModuleFooterMenu = () => {
         <div className={styles.footer}>
             {
                 buttons.map((item, index) => {
-                    return <ModuleFooterButton key={index} text={item.name} to={item.link} img={item.img} current_url={currentUrl}/>
+                    return <FooterMenuButton key={index} text={item.name} to={item.link} img={item.img} current_url={currentUrl}/>
                 })
             }
 
@@ -46,4 +46,4 @@ const ModuleFooterMenu = () => {
     )
 }
 
-export default ModuleFooterMenu
+export default FooterMenu
