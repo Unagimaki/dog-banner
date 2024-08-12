@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import styles from './moduleFooterButton.module.scss'
+import styles from './FooterMenuButton.module.scss'
 
 const FooterMenuButton = ({text, to, img, current_url}) => {
     return(
