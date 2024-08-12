@@ -1,9 +1,11 @@
 import styles from './rewardsPage.module.scss'
 
-export const RewardsPage = () => {
+const RewardsPage = () => {
     return(
         <div className={styles.rewards_container}>
             RewardsPage
         </div>
     )
 }
+
+export default RewardsPage

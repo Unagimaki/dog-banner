@@ -1,8 +1,8 @@
-import { BalanceModule } from '../../modules/BalanceModule/BalanceModule'
-import { FooterMenuModule } from '../../modules/FooterMenuModule/FooterMenuModule'
+import { BalanceModule } from '../../modules/ModuleBalance/ModuleBalance'
+import { FooterMenuModule } from '../../modules/ModuleFooterMenu/ModuleFooterMenu'
 import styles from './bonusPage.module.scss'
 
-export const BonusPage = () => {
+const BonusPage = () => {
     return(
         <div className={styles.bonus_page}>
             <BalanceModule/>
@@ -10,3 +10,5 @@ export const BonusPage = () => {
         </div>
     )
 }
+
+export default BonusPage

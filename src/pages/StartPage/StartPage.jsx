@@ -7,7 +7,7 @@ import { useInitData } from '@vkruglikov/react-telegram-web-app';
 import styles from './startPage.module.scss'
 
 
-export const StartPage = () => {
+const StartPage = () => {
     return(
         <div className={styles.start}>
             <Logo/>
@@ -17,3 +17,5 @@ export const StartPage = () => {
         </div>  
     )
 }
+
+export default StartPage

@@ -1,4 +1,4 @@
-import { BalanceModule } from '../../modules/BalanceModule/BalanceModule'
+import { BalanceModule } from '../../modules/ModuleBalance/ModuleBalance'
 import { FriendsCountContainer } from './FriendsCountContainer/FriendsCountContainer'
 import { SkinList } from './SkinList/SkinList'
 import { MainButton } from '@vkruglikov/react-telegram-web-app';
@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './shopPage.module.scss'
 
 
-export const ShopPage = () => {
+const ShopPage = () => {
     const navigate = useNavigate()
 
     return(
@@ -22,3 +22,5 @@ export const ShopPage = () => {
         </div>
     )
 }
+
+export default ShopPage

@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import { BalanceModule } from '../../modules/BalanceModule/BalanceModule'
+import { BalanceModule } from '../../modules/ModuleBalance/ModuleBalance'
 import { BoostModal } from './BoostModal/BoostModal'
 import { BoostsContainer } from './BoostsContainer/BoostsContainer'
 import styles from './boostsPage.module.scss'
 import { ImproveContainer } from './ImproveContainer/ImproveContainer'
 
-export const BoostsPage = () => {
+const BoostsPage = () => {
     const [boostModalIsVisible, setBoostModalIsVisible] = useState<boolean>(false)
     const [visible, setVisible] = useState(false);
     const handleModal = () => {
@@ -27,3 +27,5 @@ export const BoostsPage = () => {
         </div>
     )
 }
+
+export default BoostsPage
