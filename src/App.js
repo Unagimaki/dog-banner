@@ -9,8 +9,8 @@ function App() {
     tg.close()
   }
   useEffect(() => {
-    console.log(tg.initData)
-    
+    alert(tg.initData)
+
     
   }, [])
     return (
