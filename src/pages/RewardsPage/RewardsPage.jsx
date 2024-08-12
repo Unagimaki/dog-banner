@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import FooterMenu from '../../features/FooterMenu/FooterMenu'
 import styles from './rewardsPage.module.scss'
+import { MainButton } from '@vkruglikov/react-telegram-web-app'
 
 const RewardsPage = () => {
     const navigate = useNavigate()

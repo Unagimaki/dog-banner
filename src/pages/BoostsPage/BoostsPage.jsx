@@ -6,6 +6,7 @@ import { ImproveContainer } from './ImproveContainer/ImproveContainer'
 import Balance from '../../features/Balance/Balance'
 import FooterMenu from '../../features/FooterMenu/FooterMenu'
 import { useNavigate } from 'react-router-dom'
+import { MainButton } from '@vkruglikov/react-telegram-web-app'
 
 const BoostsPage = () => {
     const navigate = useNavigate()
