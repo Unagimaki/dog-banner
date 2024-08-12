@@ -1,16 +1,13 @@
 import { Link } from 'react-router-dom'
-import { BalanceModule } from '../../modules/ModuleBalance/ModuleBalance'
-import { ModuleStats } from '../../modules/ModuleStats/ModuleStats'
-import { PagesLinksEnum } from '../../shared/PagesLinks.enum'
 import styles from './mainPage.module.scss'
+import { PagesLinks } from '../../shared/PagesLinks'
 
 const MainPage = () => {
     return(
-        <Link to={PagesLinksEnum.GAME_URL}>
+        <Link to={PagesLinks.GAME_URL}>
             <div className={styles.main_page}>
-                <ModuleStats/>
-                <BalanceModule/>
-            </div>
+                
+           </div>
         </Link>
 
     )

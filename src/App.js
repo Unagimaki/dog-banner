@@ -13,15 +13,10 @@ import StartPage from './pages/StartPage/StartPage';
 
 import styles from './App.module.scss'
 
-const tg = window.Telegram.WebApp
+// const tg = window.Telegram.WebApp
 
 function App() {
-  const handleClose = () => {
-    tg.close()
-  }
-  useEffect(() => {
-    
-  }, [])
+
     return (
       <div className={styles.app}>
       <Routes>
@@ -35,9 +30,9 @@ function App() {
         <Route path={PagesLinks.LOADING_URL} element={<LoaderPage/>}/>
         <Route path='/' element={<StartPage/>}/>
       </Routes>
-      {
+      {/* {
         currentUrl !== '/' && currentUrl!== PagesLinks.LOADING_URL && <FooterMenuModule/>
-      }
+      } */}
     </div>
   );
 }

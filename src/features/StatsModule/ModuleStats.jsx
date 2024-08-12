@@ -1,5 +1,5 @@
 import styles from './moduleStats.module.scss'
-import { ModuleStatsItem } from './ModuleStatsItem/ModuleStatsItem'
+import ModuleStatsItem from './ModuleStatsItem/ModuleStatsItem'
 
 const ModuleStats = () => {
     const damage = require('../assets/damage_icon.png')

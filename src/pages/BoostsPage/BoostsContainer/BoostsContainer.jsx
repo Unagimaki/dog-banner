@@ -1,13 +1,8 @@
-import { FC } from 'react'
 import { BoostsTitle } from '../BoostsTitle/BoostsTitle'
 import { BoostItem } from './BoostItem/BoostItem'
 import styles from './boostsContainer.module.scss'
 
-interface props {
-    handleModal: () => void
-}
-
-export const BoostsContainer: FC<props> = ({handleModal}) => {
+export const BoostsContainer = ({handleModal}) => {
     const boosts = [
         {   
             title: 'Free буст монет',

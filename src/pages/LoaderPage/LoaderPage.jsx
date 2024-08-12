@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 import styles from './loaderPage.module.scss'
-import { PagesLinksEnum } from '../../shared/PagesLinks.enum';
+import { PagesLinks } from '../../shared/PagesLinks'
 
 const LoaderPage = () => {
     const loading = require('./assets/loading.png')
 
     useEffect(() => {
         setTimeout(() => {
-            window.location.assign(PagesLinksEnum.MAIN_URL);
+            window.location.assign(PagesLinks.MAIN_URL);
         }, 1000)
     }, [])
     

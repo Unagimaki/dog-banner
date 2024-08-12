@@ -1,6 +1,6 @@
-import styles from './moduleBalance.module.scss'
+import styles from './Balance.module.scss'
 
-const ModuleBalance = ({top}) => {
+const Balance = ({top}) => {
     const img  = require('./assets/money_icon.png')
     return(
         <div style={{top: top}} className={styles.balance}>
@@ -12,4 +12,4 @@ const ModuleBalance = ({top}) => {
     )
 }
 
-export default ModuleBalance
+export default Balance

@@ -1,7 +1,6 @@
 import { randomElementPosition } from "./randomElementPosition"
 import { removeElement } from "./removeElement"
 import { moveElement } from "./moveElement"
-import { getCoins } from "../service/getCoins"
 import styles from '../gamePage.module.scss'
 
 const classList = [
@@ -17,7 +16,6 @@ export const createMoneyElement = (parentElement, elementPixelSize, elementFalli
     newDiv.classList.add(styles.element)
     newDiv.addEventListener('click', () => {
         removeElement(newDiv)
-        getCoins()
     })
     moveElement(parentElement, newDiv, elementFallingSpeed)
 }

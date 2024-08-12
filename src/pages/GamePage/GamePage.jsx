@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { createMoneyElement } from './helpers/createMoneyElement'
 import styles from './gamePage.module.scss'
-import { ModuleStats } from '../../modules/ModuleStats/ModuleStats'
 
 const GamePage = () => {
-    const gameElementRef = useRef<any>(null);
+    const gameElementRef = useRef(null);
 
     useEffect(() => {
         const gameElement = gameElementRef.current       
@@ -20,7 +19,6 @@ const GamePage = () => {
 
     return(
         <div ref={gameElementRef} className={styles.game}>
-            <ModuleStats/>
         </div>
     )
 } 
