@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './shopPage.module.scss'
 import Balance from '../../features/Balance/Balance';
+import FooterMenu from '../../features/FooterMenu/FooterMenu';
 
 
 const ShopPage = () => {
@@ -18,7 +19,7 @@ const ShopPage = () => {
             <MainButton
                 text="Back"
                 onClick={() => navigate(-1)}
-            />
+            /><FooterMenu/>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import FooterMenu from '../../features/FooterMenu/FooterMenu'
 import { StatButton } from './StatButton/StatButton'
 import { StatCount } from './StatCount/StatCount'
 import { StatList } from './StatList/StatList'
@@ -11,6 +12,7 @@ const StatPage = () => {
             <StatCount/>
             <StatList/>
             <StatButton/>
+            <FooterMenu/>
         </div>
     )
 }

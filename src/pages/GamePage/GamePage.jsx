@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { createMoneyElement } from './helpers/createMoneyElement'
 import styles from './gamePage.module.scss'
+import FooterMenu from '../../features/FooterMenu/FooterMenu';
 
 const GamePage = () => {
     const gameElementRef = useRef(null);
@@ -19,6 +20,7 @@ const GamePage = () => {
 
     return(
         <div ref={gameElementRef} className={styles.game}>
+            <FooterMenu/>
         </div>
     )
 } 
