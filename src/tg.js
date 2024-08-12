@@ -1,5 +1,5 @@
 // WebView
-export const tg = (function () {
+(function () {
     var eventHandlers = {};
   
     var locationHash = '';
