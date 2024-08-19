@@ -15,6 +15,7 @@ import styles from './App.module.scss'
 // const tg = window.Telegram.WebApp
 
 function App() {
+  alert(`Window width: ${window.innerWidth}px, Window height: ${window.innerHeight}px`);
 
     return (
       <div className={styles.app}>
