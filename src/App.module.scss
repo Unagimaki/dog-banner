@@ -1,3 +1,5 @@
+@import './assets/styles/vars';
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -87,4 +89,10 @@ label {
 
 legend {
 	display: block;
+}
+
+.app {
+    @each $property, $value in $page_styles {
+        #{$property}: $value;
+    }
 }
