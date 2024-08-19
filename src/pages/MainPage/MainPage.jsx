@@ -4,6 +4,7 @@ import { PagesLinks } from '../../shared/PagesLinks'
 import Balance from '../../features/Balance/Balance'
 import Stats from '../../features/Stats/Stats'
 import FooterMenu from '../../features/FooterMenu/FooterMenu'
+import { TreeModule } from '../../features/Tree/TreeModule'
 
 const MainPage = () => {
     return(

@@ -1,7 +1,5 @@
 .leaves {
-    position: absolute;
-    width: 90vw;
+    width: min(68.8vw, 258px);
     z-index: 2;
-    bottom: 0%;
-    left: 5%;
+    transform: rotate(25.6deg);
 }

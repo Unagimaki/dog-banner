@@ -5,10 +5,10 @@
     position: relative;
     color: #000;
     background-color: $green;
-    width: 82.67%;
-    height: 6.9%;
+    width: min(82.67vw, 310px);
+    height: min(14.93vw, 56px);
     font-family: $MSemiBold;
-    font-size: 150%;
+    font-size: min(6.4vw, 24px);
     border-radius: 8px;
     z-index: 3;
     display: flex;

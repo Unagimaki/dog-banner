@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { PagesLinks } from './shared/PagesLinks';
 import BoostsPage from './pages/BoostsPage/BoostsPage';

@@ -1,7 +1,10 @@
+@import '../../../assets/styles/vars';
+
 .logo {
     position: relative;
-    width: 30.4%;
-    height: 7.39%;
-    margin: 0 auto;
+    text-align: center;
+    color: #8CDB4E;
+    font-size: min(10.67vw, 40px);
+    font-family: $MBold;
     z-index: 2;
 }

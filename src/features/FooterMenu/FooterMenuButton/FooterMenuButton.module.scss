@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 17.2%;
+    width: min(15.73vw, 59px);
     &_img {
         width: 67.8%;
         height: auto;
     }
     &_text {
         font-family: 'MBold';
-        font-size: 75%;
+        font-size: min(3.2vw, 12px);
     }
 }

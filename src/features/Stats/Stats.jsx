@@ -1,14 +1,19 @@
+import { useSelector } from 'react-redux'
 import StatItem from './StatItem/StatItem'
 import styles from './stats.module.scss'
 
 const Stats = () => {
-    const damage = require('../assets/damage_icon.png')
-    const energy = require('../assets/energy_icon.png')
+    const damageImg = require('./assets/damage_icon.png')
+    const energyImg = require('./assets/energy_icon.png')
+    const damage = useSelector(state => state.userDamage)
+    const energy = useSelector(state => state.userCurrentEnergy)
+     
+
 
     return(
         <div className={styles.stats}>
-            <StatItem img={damage} text={'Урон 60'}/>
-            <StatItem img={energy} text={'11 000'}/>
+            <StatItem img={damageImg} count={damage} text={'Пучки'}/>
+            <StatItem img={energyImg} count={energy} text={'Энергия'}/>
         </div>
     )
 }

@@ -1,0 +1,1 @@
+export const URL = 'https://moneytree-api.extensi.one/api'

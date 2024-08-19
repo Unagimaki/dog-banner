@@ -1,32 +1,36 @@
 @import '../../../assets/styles/vars';
 
 .item {
-    width: 50.13%;
-    height: 83.33%;
+    overflow: visible;
     position: relative;
-    display: block;
+    width: min(26.67vw, 100px);
+    height: min(16.53vw, 62px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: $MBold;
+    color: #fff;
+    text-align: center;
     &_img {
         position: absolute;
-        left: 0;
-        width: 35.39%;
-        height: auto;
+        right: min(17.87vw, 67px);
+        width: min(16.53vw, 62px);
+        height: min(16.53vw, 62px);
         z-index: 2;
     }
-    &_count {
-        font-family: $MBold;
-        width: 81.09%;
-        height: 58.18%;
-        position: absolute;
-        top: 20.55%;
-        right: 0;
+    &_container {
+        width: 100%;
+        height: min(11.2vw, 42px);
+        display: flex;
+        flex-direction: column;
+        border-radius: $br8px;
         background: $dark_gradient;
         border: 2px solid #494949;
-        color: #fff;
-        border-radius: 8px;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        &_title {
+            font-size: $fz12px;
+        }
+        &_count {
+            font-size: $fz18px;
+        }
     }
 }

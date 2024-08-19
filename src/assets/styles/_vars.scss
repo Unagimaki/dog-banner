@@ -41,6 +41,11 @@ $MMedium: 'MMedium';
 $page_width: 100vw;
 $page_height: 100vh;
 
+$br8px: min(2.13vw, 8px);
+$fz12px: min(3.2vw, 12px);
+$fz18px: min(4.8vw, 18px);
+$fz40px: min(10.67vw, 40px);
+
 $dark_gradient: linear-gradient(to right, #202020, #223B37);
 $page_background: '../../../public/images/background.png';
 $page_mainBackground: '../../../public/images/mainBackground.png';
@@ -53,6 +58,9 @@ $page_gradient: linear-gradient(to bottom,
 $green: #8CDB4E;
 
 $page_styles: (
+  display: flex,
+  flex-direaction: column,
+  align-items: center,
   position: relative,
   width: $page_width,
   height: $page_height,

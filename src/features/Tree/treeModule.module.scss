@@ -2,12 +2,12 @@
 
 .tree {
     position: absolute;
-    width: 63.73%;
-    height: 58.87%;
-    left: 18.13%;
-    top: 21.33%;
+    width: min(62.93vw, 236px);
+    height: min(125.877vw, 472px);
+    left: 18.13vw;
+    bottom: 66.67vw;
     background: url($tree_background);
     background-repeat: no-repeat;
-    // background-size: cover;
+    background-size: cover;
     background-position: center;
 }
