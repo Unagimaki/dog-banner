@@ -64,7 +64,7 @@ $page_styles: (
   align-items: center,
   position: relative,
   width: $page_width,
-  height: $page_height,
+  min-height: $page_height,
   background: url($page_background) no-repeat,
   background-size: cover,
   margin: 0 auto,

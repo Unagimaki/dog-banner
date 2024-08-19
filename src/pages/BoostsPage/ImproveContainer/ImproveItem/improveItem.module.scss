@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/vars';
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: min(2.13vw, 8px);
+    border-radius: $br8px;
+    background: $card_background;
+    width: min(44.53vw, 167px);
+    height: min(46.93vw, 176px);
+    font-size: $fz12px;
+    &_img {
+        width: min(17.07vw, 64px);
+        height: min(17.07vw, 64px);
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &_title {
+        font-family: $MBold;
+    }
+    &_text {
+        font-family: $MMedium;
+    }
+    &_button {
+        font-family: $MBold;
+        background: $green;
+        color: #000;
+        height: min(8.53vw, 32px);
+        border-radius: $br8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
