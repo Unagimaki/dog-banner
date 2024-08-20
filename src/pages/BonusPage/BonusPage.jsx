@@ -1,17 +1,16 @@
-import { useNavigate } from 'react-router-dom'
-import FooterMenu from '../../features/FooterMenu/FooterMenu'
+import Balance from '../../features/Balance/Balance'
 import styles from './bonusPage.module.scss'
-import { MainButton } from '@vkruglikov/react-telegram-web-app'
+import { InviteButtons } from './InviteButtons/InviteButtons'
+import { InviteInfo } from './InviteInfo/InviteInfo'
+import { TaskContainer } from './TaskContainer/TaskContainer'
 
 const BonusPage = () => {
-    const navigate = useNavigate()
     return(
         <div className={styles.bonus_page}>
-            <FooterMenu/>
-            <MainButton
-                text="Back"
-                onClick={() => navigate(-1)}
-            />
+            <Balance top={'min(11.73vw, 44px'}/>
+            <InviteInfo/>
+            <InviteButtons/>
+            <TaskContainer/>
         </div>
     )
 }

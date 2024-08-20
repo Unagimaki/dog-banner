@@ -2,7 +2,7 @@
 
 .count {
     position: relative;
-    width: 67.73%;
+    width: $size343px;
     margin: 0 auto;
     z-index: 2;
     display: flex;
@@ -10,7 +10,7 @@
     align-items: center;
     margin-bottom: 4.3%;
     font-family: $MBold;
-    font-size: 112.5%;
+    font-size: $fz18px;
     color: #fff;
     &_first {
         width: 46.06%;
@@ -18,7 +18,6 @@
         align-items: center;
         justify-content: space-between;
         &_text {
-            font-size: 18px;
         }
         &_img {
             width: 20.51%;

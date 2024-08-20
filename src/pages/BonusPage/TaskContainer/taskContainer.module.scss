@@ -1,0 +1,17 @@
+@import '../../../assets/styles/vars';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: $size343px;
+    &_title {
+        color: #fff;
+        font-size: $fz18px;
+        font-family: $MBold;
+    }
+    &_tasks_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $size16px;
+    }
+}

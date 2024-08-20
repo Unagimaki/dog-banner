@@ -14,6 +14,7 @@
     &_wrapper {
         display: flex;
         height: min(16vw, 60px);
+        width: $size343px;
         justify-content: space-around;
         align-items: center;
         background: linear-gradient(to right, #202020, #223B37);

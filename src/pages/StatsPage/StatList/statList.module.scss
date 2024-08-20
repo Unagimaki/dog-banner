@@ -1,7 +1,9 @@
+@import '../../../assets/styles/vars';
+
 .list {
     display: flex;
     flex-direction: column;
-    width: 91.47%;
+    width: $size343px;
     z-index: 2;
     position: relative;
     margin: 0 auto;

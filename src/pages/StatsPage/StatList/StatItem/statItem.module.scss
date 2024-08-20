@@ -6,7 +6,7 @@
     background-color: $card_background;
     width: 100%;
     aspect-ratio: 6.125;
-    border-radius: 8px;
+    border-radius: $br8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,10 +20,10 @@
             &_place {
                 font-family: $MBold;
                 color: #818181;
-                font-size: 75%;
+                font-size: $fz12px;
             }
             &_name {
-                font-size: 88%;
+                font-size: $fz14px;
                 font-family: $MSemiBold;
             }
         }
@@ -42,7 +42,7 @@
         &_text {
             color: $green;
             font-family: $MBold;
-            font-size: 100%;
+            font-size: $size16px;
         }
     }
 }

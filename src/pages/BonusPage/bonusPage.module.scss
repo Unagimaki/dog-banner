@@ -5,4 +5,5 @@
     @each $property, $value in $page_styles {
         #{$property}: $value;
     }
+    padding-top: min(37.33vw, 140px);
 }

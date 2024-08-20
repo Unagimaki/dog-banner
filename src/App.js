@@ -12,11 +12,12 @@ import StartPage from './pages/StartPage/StartPage';
 
 import styles from './App.module.scss'
 import FooterMenu from './features/FooterMenu/FooterMenu';
+import { StatButton } from './pages/StatsPage/StatButton/StatButton';
 
 // const tg = window.Telegram.WebApp
 
 function App() {
-  alert(`Window width: ${window.innerWidth}px, Window height: ${window.innerHeight}px`);
+  // alert(`Window width: ${window.innerWidth}px, Window height: ${window.innerHeight}px`);
 
     return (
       <div className={styles.app}>
@@ -34,6 +35,7 @@ function App() {
       {/* {
         currentUrl !== '/' && currentUrl!== PagesLinks.LOADING_URL && <FooterMenuModule/>
       } */}
+      <StatButton/>
       <FooterMenu/>
     </div>
   );

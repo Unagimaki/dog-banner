@@ -1,22 +1,27 @@
 @import '../../../assets/styles/vars';
 
 .button {
-    position: absolute;
-    bottom: 12.81%;
-    left: 4.27%;
-    width: 91.47%;
-    height: 6.9%;
-    background-color: $green;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 27.73vw;
+    left: 4.27vw;
+    width: 91.47vw;
+    height: min(16vw, 60px);
     z-index: 2;
-    margin: 0 auto;
-    border-radius: 8px;
     font-family: $MBold;
-    font-size: 100%;
+    &_wrapper {
+        height: min(16vw, 60px);
+        background-color: $green;
+        width: $size343px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $br8px;
+    }
     &_text {
-        font-size: 16px;
+        font-size: $size16px;
         font-weight: bold;
     }
     &_icon {
