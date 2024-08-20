@@ -97,5 +97,5 @@ legend {
 .app {
     @each $property, $value in $page_styles {
         #{$property}: $value;
-    }
+    };
 }
