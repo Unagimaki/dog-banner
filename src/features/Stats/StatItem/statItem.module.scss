@@ -3,24 +3,22 @@
 .item {
     overflow: visible;
     position: relative;
-    width: min(26.67vw, 100px);
     height: min(16.53vw, 62px);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     font-family: $MBold;
     color: #fff;
     text-align: center;
     &_img {
         position: absolute;
-        right: min(17.87vw, 67px);
         width: min(16.53vw, 62px);
         height: min(16.53vw, 62px);
         z-index: 2;
+        left: -30%;
     }
     &_container {
-        width: 100%;
         height: min(11.2vw, 42px);
+        padding: 0 min(2.67vw, 10px) 0 min(8vw, 30px);
         display: flex;
         flex-direction: column;
         border-radius: $br8px;

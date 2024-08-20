@@ -12,8 +12,10 @@ const Stats = () => {
 
     return(
         <div className={styles.stats}>
-            <StatItem img={damageImg} count={damage} text={'Пучки'}/>
-            <StatItem img={energyImg} count={energy} text={'Энергия'}/>
+            <div className={styles.stats_wrapper}>
+                <StatItem img={damageImg} count={damage} text={'Пучки'}/>
+                <StatItem img={energyImg} count={energy} text={'Энергия'}/>
+            </div>
         </div>
     )
 }

@@ -2,11 +2,17 @@
     overflow: visible;
     position: absolute;
     height: min(16.53vw, 62px);
-    width: min(59.73vw, 224px);
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     z-index: 2;
-    left: 24vw;
     top: 14.93vw;
+    &_wrapper {
+        height: inherit;
+        display: flex;
+        overflow: visible;
+        gap: 20%;  
+    }
 }
