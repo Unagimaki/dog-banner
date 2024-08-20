@@ -8,6 +8,17 @@ export const StatList = () => {
             <StatItem/>
             <StatItem/>
             <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
+            <StatItem/>
         </div>
     )
 }

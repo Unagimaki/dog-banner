@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 body {
-	overflow-y: auto;
+	overflow-y: visible;
 	overflow-x: hidden;
 }
 
@@ -95,7 +95,10 @@ legend {
 }
 
 .app {
-    @each $property, $value in $page_styles {
-        #{$property}: $value;
-    };
+	// background: url('../public/images/background.png') no-repeat;
+	// background-size: cover;
+	// background-position: center;
+    // @each $property, $value in $page_styles {
+    //     #{$property}: $value;
+    // };
 }

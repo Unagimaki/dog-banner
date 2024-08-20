@@ -12,7 +12,6 @@ export const SkinContainer = () => {
                 <SkinItemBlocked/>
                 <SkinItemBlocked/>
                 <SkinItemBlocked/>
-                <SkinItemBlocked/>
             </div>
         </div>
     )

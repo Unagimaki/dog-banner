@@ -69,12 +69,13 @@ $page_styles: (
   position: relative,
   width: $page_width,
   min-height: $page_height,
-  background: url($page_background) no-repeat,
-  background-size: cover,
+  // background: url($page_background) no-repeat,
+  // background-size: cover,
   margin: 0 auto,
   overflow: hidden,
   transition: opacity 0.5s,
   animation: entry .5s ease-in-out, // add animation property
+  z-index: 2,
 );
              
 $page_mask: (
