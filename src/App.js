@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { PagesLinks } from './shared/PagesLinks';
 import BoostsPage from './pages/BoostsPage/BoostsPage';
 import GamePage from './pages/GamePage/GamePage';
@@ -18,7 +18,7 @@ import { StatButton } from './pages/StatsPage/StatButton/StatButton';
 
 function App() {
   // alert(`Window width: ${window.innerWidth}px, Window height: ${window.innerHeight}px`);
-
+    const currentUrl = useLocation().pathname
     return (
       <div className={styles.app}>
       <Routes>
@@ -32,11 +32,12 @@ function App() {
         <Route path={PagesLinks.LOADING_URL} element={<LoaderPage/>}/>
         <Route path='/' element={<StartPage/>}/>
       </Routes>
-      {/* {
-        currentUrl !== '/' && currentUrl!== PagesLinks.LOADING_URL && <FooterMenuModule/>
-      } */}
-      <StatButton/>
-      <FooterMenu/>
+      {
+        currentUrl !== '/' && currentUrl!== PagesLinks.LOADING_URL && <FooterMenu/>
+      }
+      {
+        currentUrl === PagesLinks.STATS_URL && <StatButton/>
+      }
     </div>
   );
 }
