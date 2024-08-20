@@ -8,17 +8,19 @@ export const TaskContainer = () => {
                 Задания
             </div>
             <div className={styles.container_tasks_wrapper}>
-                <TaskItem done={true}/>
-                <TaskItem done={false}/>
-                <TaskItem done={false}/>
-                <TaskItem done={false}/>
-                <TaskItem done={false}/>
-                <TaskItem done={true}/>
-                <TaskItem done={false}/>
-                <TaskItem done={false}/>
-                <TaskItem done={false}/>
-                <TaskItem done={true}/>
-                <TaskItem done={false}/>
+                <div className={styles.container_tasks_wrapper_list}>
+                    <TaskItem done={true}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={true}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={false}/>
+                    <TaskItem done={true}/>
+                    <TaskItem done={false}/>
+                </div>
             </div>
         </div>
     )

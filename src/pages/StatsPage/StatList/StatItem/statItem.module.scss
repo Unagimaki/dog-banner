@@ -4,8 +4,8 @@
     color: #fff;
     border: 2px solid $green;
     background-color: $card_background;
-    width: 100%;
-    aspect-ratio: 6.125;
+    width: $size343px;
+    height: min(14.93vw, 56px);
     border-radius: $br8px;
     display: flex;
     align-items: center;

@@ -4,7 +4,6 @@ export const Background = () => {
     const img = require('../../assets/images/background.png')
     return(
         <div className={styles.container}>
-            <img src={img} alt="background" />
         </div>
     )
 }

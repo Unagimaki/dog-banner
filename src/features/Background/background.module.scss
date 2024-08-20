@@ -6,4 +6,7 @@
     position: absolute;
     top: 0;
     z-index: 1;
+    background: url($page_background) no-repeat;
+    background-size: cover;
+    background-position: center;
 }

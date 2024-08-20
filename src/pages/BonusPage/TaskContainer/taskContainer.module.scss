@@ -4,14 +4,21 @@
     display: flex;
     flex-direction: column;
     width: $size343px;
+    position: relative;
+    z-index: 2;
     &_title {
         color: #fff;
         font-size: $fz18px;
         font-family: $MBold;
     }
     &_tasks_wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: $size16px;
+        overflow: scroll;
+        max-height: 60vh;
+        &_list {
+            display: flex;
+            flex-direction: column;
+            gap: $size16px;
+    
+        }
     }
 }

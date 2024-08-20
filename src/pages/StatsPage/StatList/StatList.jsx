@@ -4,21 +4,20 @@ import styles from './statList.module.scss'
 export const StatList = () => {
     return(
         <div className={styles.list}>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
-            <StatItem/>
+            <div className={styles.list_wrapper}>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+                <StatItem/>
+            </div>
         </div>
     )
 }
