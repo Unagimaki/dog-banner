@@ -15,7 +15,6 @@ const StatPage = () => {
             <StatCount/>
             <StatList/>
             <StatButton/>
-            <FooterMenu/>
             <MainButton
                 text="Back"
                 onClick={() => navigate(-1)}                

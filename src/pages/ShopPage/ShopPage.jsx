@@ -20,7 +20,6 @@ const ShopPage = () => {
                 text="Back"
                 onClick={() => navigate(-1)}
             />
-            <FooterMenu/>
         </div>
     )
 }

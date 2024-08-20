@@ -12,7 +12,6 @@ const MainPage = () => {
             <div className={styles.main_page}>
                 <Stats/>
                 <Balance/>
-                <FooterMenu/>    
             </div>
         </Link>
 

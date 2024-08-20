@@ -11,6 +11,7 @@ import LoaderPage from './pages/LoaderPage/LoaderPage';
 import StartPage from './pages/StartPage/StartPage';
 
 import styles from './App.module.scss'
+import FooterMenu from './features/FooterMenu/FooterMenu';
 
 // const tg = window.Telegram.WebApp
 
@@ -33,6 +34,7 @@ function App() {
       {/* {
         currentUrl !== '/' && currentUrl!== PagesLinks.LOADING_URL && <FooterMenuModule/>
       } */}
+      <FooterMenu/>
     </div>
   );
 }
