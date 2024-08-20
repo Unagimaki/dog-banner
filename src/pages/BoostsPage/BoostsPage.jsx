@@ -20,7 +20,7 @@ const BoostsPage = () => {
         <div
             className={`${styles.boosts_page} ${visible? styles['boosts_page-enter-active'] : styles['boosts_page-leave']}`}
         >
-            <Balance top={'11.73vw'}/>
+            <Balance top={'min(11.73vw, 44px'}/>
             <BoostsContainer handleModal={handleModal}/>
             <ImproveContainer/>
             <BoostModal handleModal={handleModal} boostModalIsVisible={boostModalIsVisible}/>

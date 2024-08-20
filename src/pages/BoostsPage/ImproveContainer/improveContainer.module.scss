@@ -1,6 +1,8 @@
+@import '../../../assets/styles/vars';
+
 .improve_container {
     position: relative;
-    width: 91.47%;
+    width: $size343px;
     height: min-content;
     display: flex;
     justify-content: space-between;
