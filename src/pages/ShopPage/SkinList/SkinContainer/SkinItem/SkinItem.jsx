@@ -2,12 +2,12 @@ import styles from './skinItem.module.scss'
 
 export const SkinItem = () => {
     const money_icon = require('../assets/money_icon.png')
-    const dragon = require('../assets/dragon.png')
+    const autobot = require('../assets/autobot.png')
     return(
         <div className={styles.skin_item}>
             <div className={styles.skin_item_lvl}>1 lvl</div>
             <div className={styles.skin_item_img}>
-                <img src={dragon} alt="dragon" />
+                <img src={autobot} alt="dragon" />
             </div>
             <div className={styles.skin_item_name}>Наименование</div>
             <div className={styles.skin_item_profit}>

@@ -10,6 +10,9 @@ export const SkinContainer = () => {
             <div className={styles.skin_container_wrapper}>
                 <SkinItem/>
                 <SkinItemBlocked/>
+                <SkinItemBlocked/>
+                <SkinItemBlocked/>
+                <SkinItemBlocked/>
             </div>
         </div>
     )

@@ -2,10 +2,10 @@
 
 .friends_container {
     position: relative;
-    height: 10.1%;
-    width: 91.47%;
+    height: min(22.4vw, 84px);
+    width: min(91.47vw, 343px);
     background: $dark_gradient;
-    border-radius: 16px;
+    border-radius: $size16px;
     margin: 0 auto;
     z-index: 2;
     display: flex;
@@ -19,7 +19,7 @@
         text-align: center;
         line-height: 1;
         span {
-            font-size: 250%;
+            font-size: $fz40px;
             font-family: $MExtra;
         }
     }

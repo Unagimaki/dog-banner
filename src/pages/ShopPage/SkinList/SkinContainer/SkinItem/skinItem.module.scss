@@ -1,34 +1,29 @@
 @import '../../../../../assets/styles/vars';
 
 .skin_item {
-    width: 48.69%;
-    aspect-ratio: 1.053;
+    width: min(44.53vw, 167px);
+    height: min(46.93vw, 176px);
     background: $card_background;
-    border-radius: 8px;
+    border-radius: $br8px;
     color: #fff;
     padding: 2.35%;
-    font-size: 12px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    font-size: $fz12px;
+    gap: $br8px;
     &_lvl {
         font-family: $MBold;
-        font-size: 100%;
         color: $green;
     }
-    &_name {
-        font-family: $MBold;
-        font-size: 100%;
-    }
+    &_name { font-family: $MBold; }
     &_profit {
         &_text { color: #818181; }
         font-family: $MMedium;
-        font-size: 100%;
     }
     &_img {
-        width: 38.32%;
-        aspect-ratio: 1;
+        width: min(17.07vw, 64px);
+        height: min(17.07vw, 64px);
         margin: 0 auto;
         img {
             width: 100%;

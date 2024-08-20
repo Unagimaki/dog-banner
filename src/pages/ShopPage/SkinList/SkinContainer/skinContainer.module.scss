@@ -1,12 +1,16 @@
+@import '../../../../assets/styles/vars';
+
 .skin_container {
-    width: 91.47%;
+    width: min(91.47vw, 343px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
     z-index: 2;
+
     &_wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: $br8px;
     }
 }

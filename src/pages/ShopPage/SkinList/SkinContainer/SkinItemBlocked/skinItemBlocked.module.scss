@@ -2,8 +2,8 @@
 
 .skin_item {
     position: relative;
-    width: 48.69%;
-    aspect-ratio: 1.053;
+    width: min(44.53vw, 167px);
+    height: min(46.93vw, 176px);
     background: $card_background;
     border-radius: 8px;
     display: flex;
@@ -11,12 +11,12 @@
     justify-content: space-between;
     color: #fff;
     padding: 2.35%;
-    font-size: 12px;
+    font-size: $fz12px;
     z-index: 2;
+    gap: $br8px;
     &_name {
         z-index: 2;
         font-family: $MBold;
-        font-size: 100%;
     }
     &_lock {
         width: 27.54%;
@@ -29,12 +29,11 @@
     &_lvl {
         z-index: 2;
         font-family: $MBold;
-        font-size: 100%;
         color: $green;
     }
     &_img {
-        width: 38.32%;
-        aspect-ratio: 1;
+        width: min(17.07vw, 64px);
+        height: min(17.07vw, 64px);
         margin: 0 auto;
         img {
             width: 100%;

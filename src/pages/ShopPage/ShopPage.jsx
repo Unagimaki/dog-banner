@@ -13,7 +13,7 @@ const ShopPage = () => {
 
     return(
         <div className={styles.shop_page}>
-            <Balance/>
+            <Balance top={'min(11.73vw, 43.99px)'}/>
             <FriendsCountContainer/>
             <SkinList/>
             <MainButton
