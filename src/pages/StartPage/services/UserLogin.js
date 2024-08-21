@@ -3,19 +3,25 @@ import { getUserInfo } from '../helpers/getUserInfo';
 import axios from 'axios';
 
 let playerData = null;
+const example = {
+  "tgId": "123456789",
+  "isPremium": true,
+  "userName": "johndoe"
+}
 
 export const UserLogin = (data) => {
     if (playerData) return playerData;
   
-    const user = getUserInfo(data).user;
+    const userFromTg = getUserInfo(data).user;
+    
     const body = {
-      tgId: user.id,
-      isPremium: user.is_premium,
-      userName: user.username
-    };
+      tgId: userFromTg.id,
+      isPremium: userFromTg.is_premium,
+      userName: userFromTg.username
+    }
   
-    return axios.post(`${URL}/auth/login`, body).then((result) => {
-      const newPlayerData = result.data.player;
+    return axios.post(`${URL}/auth/login`, example).then((result) => {
+      const newPlayerData = result.data;
   
       // Если данные о игроке изменились, обновляем состояние Redux
       if (newPlayerData !== playerData) {

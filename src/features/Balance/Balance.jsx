@@ -3,7 +3,7 @@ import styles from './Balance.module.scss'
 
 const Balance = ({top}) => {
     const img  = require('./assets/money_icon.png')
-    const balance = useSelector(state => state.userBalance)
+    const balance = useSelector(state => state.user.balance)
     return(
         <div style={{top: top}} className={styles.balance}>
             <img className={styles.balance_img} src={img} alt="money_icon" />

@@ -2,7 +2,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { PagesLinks } from './shared/PagesLinks';
 import BoostsPage from './pages/BoostsPage/BoostsPage';
 import GamePage from './pages/GamePage/GamePage';
-import RewardsPage from './pages/RewardsPage/RewardsPage';
 import ShopPage from './pages/ShopPage/ShopPage';
 import StatPage from './pages/StatsPage/StatPage';
 import BonusPage from './pages/BonusPage/BonusPage';
@@ -28,7 +27,6 @@ function App() {
       <Routes>
         <Route path={PagesLinks.BOOSTS_URL} element={<BoostsPage/>}/>
         <Route path={PagesLinks.GAME_URL} element={<GamePage/>}/>
-        <Route path={PagesLinks.REWARDS_URL} element={<RewardsPage/>}/>
         <Route path={PagesLinks.SHOP_URL} element={<ShopPage/>}/>
         <Route path={PagesLinks.STATS_URL} element={<StatPage/>}/>
         <Route path={PagesLinks.BONUS_URL} element={<BonusPage/>}/>

@@ -34,12 +34,13 @@ export const ImproveContainer = () => {
         <div className={styles.improve_container}>
             <BoostsTitle title='Улучшения'/>
             {
-                imrovements.map(item => {
+                imrovements.map((item, index) => {
                     return <ImproveItem
                         title={item.title}
                         text={item.text}
                         cost={item.cost}
                         imgURL={item.img}
+                        key={index}
                     />
                 })
             }
