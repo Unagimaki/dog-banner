@@ -2,7 +2,7 @@ import { BoostsTitle } from '../BoostsTitle/BoostsTitle'
 import { BoostItem } from './BoostItem/BoostItem'
 import styles from './boostsContainer.module.scss'
 
-export const BoostsContainer = ({handleModal}) => {
+export const BoostsContainer = () => {
     const boosts = [
         {   
             title: 'Free буст монет',
@@ -25,7 +25,6 @@ export const BoostsContainer = ({handleModal}) => {
                         text={item.text}
                         imgUrl={item.img}
                         key={index}
-                        handleModal={handleModal}
                     />
                 })
             }

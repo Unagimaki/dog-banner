@@ -6,6 +6,7 @@
     height: $page_height;
     background: url($page_mainBackground) no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0 auto;
     overflow: hidden;
     transition: opacity 0.5s;

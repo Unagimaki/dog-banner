@@ -6,7 +6,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 65.89%;
+    height: min(141.87vw, 532px);
     background: $dark_gradient;
     border-radius: 8px 8px 0 0;
     border-top: 2px solid $green;
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    z-index: 99;
     transition: transform 0.3s ease-in-out; /* Добавьте эффект перехода */
     &_close {
         position: absolute;

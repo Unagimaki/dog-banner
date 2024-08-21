@@ -1,8 +1,8 @@
 import styles from './boostItem.module.scss'
 
-export const BoostItem = ({title, text, imgUrl, handleModal}) => {
+export const BoostItem = ({title, text, imgUrl}) => {
     return(
-        <div onClick={handleModal} className={styles.boost_item}>
+        <div className={styles.boost_item}>
             <div className={styles.boost_item_img_container}>
                 <img src={imgUrl} alt="img" />
             </div>

@@ -1,19 +1,18 @@
-import { Link } from 'react-router-dom'
 import styles from './mainPage.module.scss'
 import { PagesLinks } from '../../shared/PagesLinks'
 import Balance from '../../features/Balance/Balance'
 import Stats from '../../features/Stats/Stats'
-import FooterMenu from '../../features/FooterMenu/FooterMenu'
 import { TreeModule } from '../../features/Tree/TreeModule'
 
 const MainPage = () => {
     return(
-        <Link to={PagesLinks.GAME_URL}>
+        <div to={PagesLinks.GAME_URL}>
             <div className={styles.main_page}>
                 <Stats/>
                 <Balance/>
+                <TreeModule/>
             </div>
-        </Link>
+        </div>
 
     )
 }

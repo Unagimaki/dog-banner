@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { PagesLinks } from './shared/PagesLinks';
 import BoostsPage from './pages/BoostsPage/BoostsPage';
 import GamePage from './pages/GamePage/GamePage';
@@ -22,7 +22,9 @@ function App() {
     const currentUrl = useLocation().pathname
     return (
       <div className={styles.app}>
-      <Background/>
+        {
+          currentUrl !== PagesLinks.MAIN_URL && <Background/>
+        }
       <Routes>
         <Route path={PagesLinks.BOOSTS_URL} element={<BoostsPage/>}/>
         <Route path={PagesLinks.GAME_URL} element={<GamePage/>}/>
