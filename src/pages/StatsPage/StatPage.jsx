@@ -23,7 +23,6 @@ const StatPage = () => {
 
     return(
         <div className={styles.stat_page}>
-            <img className={styles.stat_page_background} src={background} alt='img'/>
             <StatTitle/>
             <StatCount/>
             <StatList/>
