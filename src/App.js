@@ -20,6 +20,7 @@ import { OfferModal } from './pages/OffersPage/components/OfferModal/OfferModal'
 
 function App() {
   // alert(`Window width: ${window.innerWidth}px, Window height: ${window.innerHeight}px`);
+    const token = useSelector(state => state.user.token)
     const currentUrl = useLocation().pathname
     const offerModalVisible = useSelector(state => state.offers.isVisible)
     return (
@@ -30,7 +31,7 @@ function App() {
       <Routes>
         <Route path={PagesLinks.BOOSTS_URL} element={<BoostsPage/>}/>
         <Route path={PagesLinks.GAME_URL} element={<GamePage/>}/>
-        <Route path={PagesLinks.SHOP_URL} element={<ShopPage/>}/>
+        <Route path={PagesLinks.SHOP_URL} element={<ShopPage token={token}/>}/>
         <Route path={PagesLinks.STATS_URL} element={<StatPage/>}/>
         <Route path={PagesLinks.BONUS_URL} element={<OffersPage/>}/>
         <Route path={PagesLinks.MAIN_URL} element={<MainPage/>}/>

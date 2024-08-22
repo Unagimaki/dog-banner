@@ -17,7 +17,7 @@ const OffersPage = () => {
             dispatch(actionSetOffers(res.data))
         )
         .catch(e => 
-            console.log('error')
+            console.log('Get offers error')
         )
     }, [])
     return(
