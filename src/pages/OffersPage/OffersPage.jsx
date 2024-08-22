@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { actionSetOffers } from '../../state/reducers/offersReducer/actions'
 import { getData } from '../../services/getData'
 import { InviteInfo } from './components/InviteInfo/InviteInfo'
-import { InviteButtons } from './components/InviteButtons/InviteButtons'
 import { TaskContainer } from './components/TaskContainer/TaskContainer'
+import { InviteButtons } from './components/InviteButtons/InviteButtons'
 
 const OffersPage = () => {
     const token = useSelector(state => state.user.token)
