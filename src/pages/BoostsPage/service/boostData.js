@@ -1,9 +1,6 @@
 import axios from "axios"
 
-export const boostData = async (token, boostId) => {
-    console.log(boostId);
-    console.log(token);
-    
+export const boostData = async (token, boostId) => {   
     const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json'
