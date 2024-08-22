@@ -34,7 +34,7 @@ function App() {
         <Route path={PagesLinks.SHOP_URL} element={<ShopPage token={token}/>}/>
         <Route path={PagesLinks.STATS_URL} element={<StatPage/>}/>
         <Route path={PagesLinks.BONUS_URL} element={<OffersPage/>}/>
-        <Route path={PagesLinks.MAIN_URL} element={<MainPage/>}/>
+        <Route path={PagesLinks.MAIN_URL} element={<MainPage token={token}/>}/>
         <Route path={PagesLinks.LOADING_URL} element={<LoaderPage/>}/>
         <Route path='/' element={<StartPage/>}/>
       </Routes>

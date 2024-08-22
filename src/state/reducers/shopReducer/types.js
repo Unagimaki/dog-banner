@@ -1,0 +1,1 @@
+export const SET_SHOP_ITEMS = 'SET_SHOP_ITEMS'

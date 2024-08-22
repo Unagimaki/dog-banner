@@ -7,6 +7,7 @@ import { getData } from '../../services/getData';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { actionSetRef } from '../../state/reducers/referralsReducer/actions'
+import { actionSetShopItems } from '../../state/reducers/shopReducer/actions';
 
 
 const ShopPage = ({token}) => {
@@ -17,6 +18,9 @@ const ShopPage = ({token}) => {
         getData(token, 'referrals')
         .then(res => dispatch(actionSetRef(res.data)))
         .catch(() => console.log('Ref get error'))
+        getData(token, 'shop-item')
+        .then(res => dispatch(actionSetShopItems(res.data)))
+        .catch(() => console.log('Get shop items error'))
     }, [])
     return(
         <div className={styles.shop_page}>

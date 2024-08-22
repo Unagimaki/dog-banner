@@ -8,6 +8,7 @@ export const getData = async (token, url) => {
     }
     const headersJson = JSON.stringify(headers)
     const result = await axios.get(`https://moneytree-api.extensi.one/api/${url}`, { headers: JSON.parse(headersJson) })
-       
+    console.log(result)
+    
     return result
 }

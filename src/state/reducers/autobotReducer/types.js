@@ -1,0 +1,1 @@
+export const SET_AUTOBOT = 'SET_AUTOBOT'
