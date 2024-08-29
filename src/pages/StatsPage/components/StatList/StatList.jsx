@@ -3,7 +3,7 @@ import { StatItem } from './StatItem/StatItem'
 import styles from './statList.module.scss'
 
 export const StatList = () => {
-    const players = useSelector(state => state.playersTop)
+    const players = useSelector(state => state.playersTop.topPlayers)
     
     return(
         <div className={styles.list}>

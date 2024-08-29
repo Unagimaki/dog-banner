@@ -17,7 +17,7 @@ export const TaskItem = ({description, isCompleted, reward, terms, title, id}) =
     return(
         <div onClick={handleClick} className={styles.container}>
             <div className={styles.container_image}>
-                <img src={image} alt="image" />
+                <img src={image} alt="container_image" />
             </div>
             <div className={styles.container_info}>
                 <div className={styles.container_info_title}>{terms}</div>

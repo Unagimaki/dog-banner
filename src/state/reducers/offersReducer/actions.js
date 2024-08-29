@@ -1,4 +1,4 @@
-import { SET_OFFER_INFO, SET_OFFER_MODAL_VISIBLE, SET_OFFER_TITLE, SET_OFFERS } from "./types"
+import { SET_OFFER_INFO, SET_OFFER_MODAL_VISIBLE, SET_OFFERS } from "./types"
 
 export const actionSetOffers = (offers) => {
     return {

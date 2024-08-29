@@ -1,8 +1,8 @@
-import { SET_FREE_BOOSTS } from "./types"
+import { SET_BOOSTS } from "./types"
 
-export const actionSetFreeBoosts = (boosts) => {    
+export const actionSetBoosts = (boosts) => {
     return {
-        type: SET_FREE_BOOSTS,
+        type: SET_BOOSTS,
         payload: boosts
     }
 }

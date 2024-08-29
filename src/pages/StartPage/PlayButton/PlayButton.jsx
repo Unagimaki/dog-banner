@@ -6,7 +6,7 @@ export const PlayButton = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/main")
+        navigate("/loading")
     }
 
     return(

@@ -5,8 +5,9 @@ import { boostData } from '../../service/boostData'
 export const BoostItem = ({title, type, id}) => {
     const energy_img = require('../../assets/rocket_icon.png')
     const money_img = require('../../assets/money_icon.png')
-    const text = type == 'energyBoost' ? 'Восполняет всю энергию' : 'х10 лифов за тап в секунду на 10 секунд'
-    const img = type == 'energyBoost' ? energy_img : money_img
+    const text = type === 'energy' ? 'Восполняет всю энергию' :
+    'х10 лифов за тап в секунду на 10 секунд'
+    const img = type === 'energy' ? energy_img : money_img
     const token = useSelector(state => state.user.token)
     const handleClick = () => {
         boostData(token, id)

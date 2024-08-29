@@ -1,1 +1,1 @@
-export const SET_FREE_BOOSTS = 'SET_FREE_BOOSTS'
+export const SET_BOOSTS = 'SET_BOOSTS'

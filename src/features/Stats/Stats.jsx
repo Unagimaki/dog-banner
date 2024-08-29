@@ -5,8 +5,9 @@ import styles from './stats.module.scss'
 const Stats = () => {
     const damageImg = require('./assets/damage_icon.png')
     const energyImg = require('./assets/energy_icon.png')
-    const damage = useSelector(state => state.userDamage)
-    const energy = useSelector(state => state.userCurrentEnergy)
+    
+    const damage = useSelector(state => state.user.damage)
+    const energy = useSelector(state => state.user.energy)
      
 
 
